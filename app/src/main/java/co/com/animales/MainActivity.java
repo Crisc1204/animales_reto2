@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadInfo() {
         List<Animales> animalesList = new ArrayList<>();
-        animalesList.add(new Animales(R.drawable.perro1, "Perro", "El perro es un animal de tipo canino y se dice que el fiel amigo del hombre", R.raw.gato));
-        animalesList.add(new Animales(R.drawable.gato, "Gato", "El gato es un animal de tipo felino y se dice que el fiel amigo del hombre", R.raw.gato));
-        animalesList.add(new Animales(R.drawable.vaca, "Vaca", "La vaca es un animal de tipo felino y se dice que el fiel amigo del hombre", R.raw.cerdo));
-        animalesList.add(new Animales(R.drawable.cerdo, "Cerdo", "El Cerdo es un animal de tipo felino y se dice que el fiel amigo del hombre", R.raw.cerdo));
+        animalesList.add(new Animales(R.drawable.perro1, "Perro", "El perro es un animal de tipo canino y se dice que el fiel amigo del hombre", R.raw.perro));
+        animalesList.add(new Animales(R.drawable.gato, "Gato", "El gato es un animal de tipo felino y se conoce en el mundo entero como mascota de compañía.", R.raw.gato));
+        animalesList.add(new Animales(R.drawable.vaca, "Vaca", "La vaca es un animal de tipo mamífero criado por el ser humano para aprovechar su carne, leche y cuero ", R.raw.vaca));
+        animalesList.add(new Animales(R.drawable.cerdo, "Cerdo", "El Cerdo es un animal de tipo mamífero y se trata de un cuadrúpedo con patas cortas y pezuñas, un cuerpo pesado, hocico flexible y cola corta.", R.raw.cerdo));
         animalesAdapter = new AnimalesAdapter(this, animalesList);
         listViewAnimales.setAdapter(animalesAdapter);
     }
